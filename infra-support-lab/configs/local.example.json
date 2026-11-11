@@ -1,0 +1,6 @@
+{
+  "checks": [
+    {"name": "Local resolver", "type": "dns", "host": "localhost"},
+    {"name": "Working disk", "type": "disk", "path": "..", "min_free_percent": 10}
+  ]
+}

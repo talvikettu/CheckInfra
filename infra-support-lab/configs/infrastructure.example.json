@@ -1,0 +1,11 @@
+{
+  "checks": [
+    {"name": "DNS lookup", "type": "dns", "host": "localhost"},
+    {"name": "File server SMB TCP", "type": "tcp", "host": "127.0.0.1", "port": 445, "timeout": 3},
+    {"name": "Directory LDAP TCP", "type": "tcp", "host": "127.0.0.1", "port": 389, "timeout": 3},
+    {"name": "Mail SMTP TCP", "type": "tcp", "host": "127.0.0.1", "port": 25, "timeout": 3},
+    {"name": "Microsoft SQL query", "type": "mssql", "server": "localhost,1433", "timeout": 5},
+    {"name": "Working disk", "type": "disk", "path": "..", "min_free_percent": 10},
+    {"name": "File backup", "type": "backup", "path": "../backups/files.zip", "max_age_hours": 24}
+  ]
+}
